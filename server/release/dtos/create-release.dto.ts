@@ -9,5 +9,10 @@ export class CreateReleaseDto {
   @IsOptional()
   @ValidateNested()
   @Type(() => TrackDto)
+  track?: TrackDto;
+
+  @IsOptional()
+  @ValidateNested()
+  @Type(() => TrackDto)
   tracks?: TrackDto[];
 }
